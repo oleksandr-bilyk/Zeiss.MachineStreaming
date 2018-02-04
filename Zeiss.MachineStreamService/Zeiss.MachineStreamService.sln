@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zeiss.MachineStreaming", "Zeiss.MachineStreaming\Zeiss.MachineStreaming.csproj", "{B132725A-2FC5-4215-B761-9309304C24FF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zeiss.MachineStreaming.Tests", "Zeiss.MachineStreaming.Tests\Zeiss.MachineStreaming.Tests.csproj", "{7474F667-BCDE-4EE5-9397-BA95C3899A60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zeiss.MachineStreaming", "..\Zeiss.MachineStreaming\Zeiss.MachineStreaming.csproj", "{B132725A-2FC5-4215-B761-9309304C24FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,15 +15,11 @@ Global
 		{B132725A-2FC5-4215-B761-9309304C24FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B132725A-2FC5-4215-B761-9309304C24FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B132725A-2FC5-4215-B761-9309304C24FF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7474F667-BCDE-4EE5-9397-BA95C3899A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7474F667-BCDE-4EE5-9397-BA95C3899A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7474F667-BCDE-4EE5-9397-BA95C3899A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7474F667-BCDE-4EE5-9397-BA95C3899A60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {145F1A2C-6B07-4A70-906E-C5921BE9F2EC}
+		SolutionGuid = {19FF9270-B82B-4EE2-93BD-8DD6A89D3079}
 	EndGlobalSection
 EndGlobal

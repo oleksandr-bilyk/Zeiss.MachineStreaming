@@ -64,6 +64,7 @@
     <Compile Include="DeviceManager.cs" />
     <Compile Include="DeviceService.cs" />
     <Compile Include="DeviceStatusMessage.cs" />
+    <Compile Include="DeviceStatusMessageJsonSerializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DeviceStatus.cs" />
   </ItemGroup>

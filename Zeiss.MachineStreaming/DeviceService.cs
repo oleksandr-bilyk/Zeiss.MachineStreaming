@@ -62,21 +62,13 @@ namespace Zeiss.MachineStreaming
         /// </remarks>
         public void WriteClientDataAboutAllDevices(JsonTextWriter writer)
         {
-            var serializer = new JsonSerializer();
-            writer.WriteStartArray();
-            foreach (var message in deviceManager.DeviceStatusObservable.ToEnumerable())
-            {
-                serializer.Serialize(writer, message);
-            }
-            writer.WriteEndArray();
+            var messages = deviceManager.DeviceStatusObservable.ToEnumerable();
+            DeviceStatusMessageJsonSerializer.SerializeEnumerable(writer, messages);
         }
 
-        public IEnumerable<DeviceStatusMessage> ReadJsonStream(JsonTextReader jsonTextReader)
+        public IEnumerable<DeviceStatusMessage> ReadJsonStream(JsonTextReader reader)
         {
-            var serializer = new JsonSerializer();
-            // Implement iterative deserialization; eading messages one by one.
-            // I did it long time ago but don't have time to research NewtonJson library again now.
-            throw new NotImplementedException();
+            return DeviceStatusMessageJsonSerializer.DeserializeEnumerable(reader);
         }
     }
 }

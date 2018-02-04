@@ -6,6 +6,7 @@ namespace Zeiss.MachineStreaming
     public class DeviceManager
     {
         private readonly Subject<DeviceStatusMessage> subject;
+
         public DeviceManager()
         {
             subject = new Subject<DeviceStatusMessage>();
